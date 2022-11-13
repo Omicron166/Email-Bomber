@@ -55,7 +55,7 @@ Run it with python 2 (deprecated):
 python2 emailbomber.py
 ```
 
-# FAQ
+# FAQs
 
 ### Which email services are supported?
 
@@ -72,6 +72,16 @@ python2 emailbomber.py
 ### How do i enable 2FA in a google account?
 
 - Check this [Google support guide](https://support.google.com/accounts/answer/185839)
+
+# Common Issues
+
+### SSL is not supported by your installation
+> Fix for termux:
+- Check that you installed the F-Droid version
+- run `pkg upgrade`
+- try to run the tool again
+- if the issue stills there, contact with support
+
 
 # Support
 
