@@ -59,7 +59,7 @@ python2 emailbomber.py
 
 ### Which email services are supported?
 
-- Gmail is the only supported officialy, but playing with smtp custom servers you can configure other email servicces.
+- Gmail is the only supported officialy, but playing with smtp custom servers you can configure other email services.
 
 ### Can it be used anonymously?
 
@@ -80,9 +80,3 @@ python2 emailbomber.py
 - Check that you installed the F-Droid version
 - run `pkg upgrade`
 - try to run the tool again
-- if the issue stills there, contact with support
-
-
-# Support
-
-If you have issues DM or mention [Omicron166 on twitter](https://twitter.com/omicron166) or [Omicon166 on Telegram](https://t.me/omicron166)
