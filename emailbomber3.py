@@ -50,7 +50,17 @@ else:
 try:
     server = smtplib.SMTP(smtp_server, port)
     server.ehlo()
-    server.starttls()
+
+    try:
+        server.starttls()
+    except:
+        print('[!] SSL is not supported by your installation')
+        print('[i] Keep in mind that without SSL, your connection wont be encrypted')
+        choice = input('Do you want to continue without SSL? y/n: ').lower()
+        if choice.startswith('n'):
+            print('[-] Exiting...')
+            sys.exit()
+
     server.login(email, passwd)
     for i in range(1, int(total) + 1):
         subject = urandom(9)

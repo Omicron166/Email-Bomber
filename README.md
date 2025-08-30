@@ -4,27 +4,22 @@ Spam emails to a single email address
 
 <b> Use this tool for educational purpose only !! </b>
 
-## Installation
+# Installation
 
 Download the tool:
 ```bash
-$ git clone https://github.com/mohinparamasivam/Email-Bomber.git
-$ cd Email-Bomber
+git clone https://github.com/mohinparamasivam/Email-Bomber.git
 ```
-
-Run it with python 2 (deprecated): 
+OR
 ```bash
-$ python2 emailbomber.py
-```
-
-Run it with Python 3: 
-```bash
-$ python3 emailbomber3.py
+wget https://github.com/mohinparamasivam/Email-Bomber/archive/refs/heads/master.zip
+unzip master.zip
+rm masper.zip
 ```
 
 ## Setup Gmail account
 
-> The instructions are based on [this article](https://support.google.com/accounts/answer/185833)
+> The instructions are based on [this google support article](https://support.google.com/accounts/answer/185833)
 
 #### Step 1: Enable 2FA
 Go to [this link](https://myaccount.google.com/signinoptions/two-step-verification) and follow the steps to enable 2FA
@@ -48,24 +43,40 @@ In this case, in attacker email password i would have to put `swyujgqqgnlwdqqv`
 > Remember: 2FA must be kept enabled.<br>
 > If you disable, it the wont work.
 
-# FAQ
+# Usage
+
+Run it with Python 3: 
+```bash
+python3 emailbomber3.py
+```
+
+Run it with python 2 (deprecated): 
+```bash
+python2 emailbomber.py
+```
+
+# FAQs
 
 ### Which email services are supported?
 
-Gmail is the only supported officialy, but playing with smtp custom servers you can configure other email servicces.
+- Gmail is the only supported officialy, but playing with smtp custom servers you can configure other email services.
 
 ### Can it be used anonymously?
 
-No, you need a gmail account to use the tool.
+- No, you need a gmail account to use the tool.
 
 ### Do i have to create a google account just to use this tool?
 
-No, but the 2FA requirement can break other google based tools using the same account.
+- No, but the 2FA requirement might break other google based tools using the same account.
 
 ### How do i enable 2FA in a google account?
 
-Check this [Google support guide](https://support.google.com/accounts/answer/185839)
+- Check this [Google support guide](https://support.google.com/accounts/answer/185839)
 
-# Support
+# Common Issues
 
-If you have issues DM or mention [Omicron166 on twitter](https://twitter.com/omicron166) or [Omicon166 on Telegram](https://t.me/omicron166)
+### SSL is not supported by your installation
+> Fix for termux:
+- Check that you installed the F-Droid version
+- run `pkg upgrade`
+- try to run the tool again
